@@ -1,0 +1,26 @@
+.warmley-link {
+  text-transform: capitalize;
+  border-radius: 0;
+  font-size: 0.95em;
+  padding: 10px 22px;
+  min-width: 114px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.warmley-link:hover {
+  background-color: darken($brand, 5%);
+  border-color: darken($brand, 5%);
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}

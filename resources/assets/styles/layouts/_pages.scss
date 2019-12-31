@@ -1,0 +1,100 @@
+// About
+.page_item {
+  text-decoration: none;
+  display: block;
+}
+
+.page-child p {
+  font-size: 17px;
+  letter-spacing: 0.05em;
+}
+
+.page-child .about-highlighted-text {
+  font-size: 1.6em;
+  font-family: "Lora", Times, serif;
+  font-style: italic;
+  margin: 50px 20px;
+  @include lg {
+    margin: 0 0 0 9%;
+  }
+}
+
+.about-nav {
+  margin-bottom: 35px;
+}
+
+.about-nav a {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-decoration: none;
+  @include lg {
+    font-size: 1.4em;
+  }
+}
+
+.about-nav a:first-of-type {
+  padding-right: 40px;
+}
+
+.about-nav a:active {
+  text-decoration: underline;
+}
+
+// .about-images__row {
+//   min-height: 330px;
+//   @include lg {
+//     min-height: 400px;
+//   }
+// }
+
+.about-images__background-image {
+  background-position: center;
+  background-size: cover;
+  margin: 10px 15px;
+  min-height: 330px;
+  @include md {
+    margin: 5px;
+  }
+  @include lg {
+    min-height: 375px;
+  }
+}
+
+.page-child .current_page_item {
+  text-decoration: underline;
+}
+
+// CONTACT PAGE
+.contact-section h2 {
+  font-size: 1.6em;
+}
+
+.address span {
+  display: block;
+}
+
+.contact-details {
+  @include lg {
+    margin-right: 55px;
+  }
+}
+
+.contact-details a {
+  display: block;
+  margin: 20px 0;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contact-img {
+  @include md {
+    max-width: 425px;
+  }
+  @include lg {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,151 @@
+html,
+body {
+  // font-family: "Lora", Times, serif;
+  // font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans", serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: $dark-text;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: "Lora", Times, serif;
+  margin-bottom: 16px;
+  // font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin-bottom: 0.8rem;
+  font-weight: 300;
+  @include lg {
+    font-size: 17px;
+  }
+}
+
+li {
+  @include lg {
+    font-size: 17px;
+  }
+}
+
+span {
+  font-weight: 300;
+  @include lg {
+    font-size: 17px;
+  }
+}
+
+a {
+  font-weight: 300;
+  text-decoration: underline;
+  @include lg {
+    font-size: 17px;
+  }
+}
+
+a:hover {
+  color: darken($brand, 5%);
+}
+
+section {
+  margin: 70px 0;
+  @include lg {
+    margin: 100px 0;
+  }
+  @include xxl {
+    margin: 120px 0;
+  }
+}
+
+.nav-primary ul {
+  padding: 0;
+  font-size: 1.3em;
+}
+
+.nav-primary li {
+  text-decoration: none;
+  display: block;
+}
+
+.header {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 24px;
+  @include xl {
+    font-size: 2em;
+  }
+}
+
+.banner {
+  @include mobilemax {
+    padding: 6px 0;
+  }
+}
+
+.header--margin-bottom {
+  margin-bottom: 36px;
+}
+
+.header--less-margin-bottom {
+  margin-bottom: 8px;
+}
+
+.header--max-width {
+  max-width: 350px;
+}
+
+.subtitle {
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page-header h1 {
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.corner-top-right {
+  border-radius: 0 45px 0 45px;
+  @include lg {
+    border-radius: 0 65px 0 0;
+  }
+}
+
+.corner-bottom-left {
+  border-radius: 0 45px 0 45px;
+  @include lg {
+    border-radius: 0 0 0 65px;
+  }
+}
+
+.admin-bar .brand {
+  margin-top: 54px;
+}
+
+iframe {
+  max-width: 100%;
+}

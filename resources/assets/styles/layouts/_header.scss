@@ -1,0 +1,160 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+
+  color: $dark-text;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+
+  @include md {
+    font-size: 18px;
+  }
+
+  @include lg {
+    padding: 1.5rem 3rem;
+    height: 101px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.banner .nav a:hover {
+  color: $brand;
+}
+
+.logo {
+  max-width: 200px;
+  margin: 8px;
+
+  @include md {
+    max-width: 250px;
+    margin: 0;
+  }
+}
+
+.nav-primary {
+  margin: 15px 0;
+
+  @include mobilemax {
+    display: none;
+  }
+}
+
+.nav-visible {
+  @include mobilemax {
+    display: block;
+  }
+}
+
+.nav {
+  @include mobilemax {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.brand {
+  @include lg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 22px;
+  }
+}
+
+.menu-item {
+  border-bottom: 1px solid $brand;
+  @include md {
+    border: none;
+  }
+}
+
+.menu-item:last-of-type {
+  border: none;
+}
+
+.menu-item:nth-of-type(2) {
+  @include lg {
+    margin-right: 304px;
+  }
+}
+
+// CUSTOM HAMBURGER
+.animated-icon2 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-icon2 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: $brand;
+}
+
+.animated-icon2 span:nth-child(1) {
+  top: 0;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 6px;
+  border: none;
+  top: 33px;
+
+  @include md {
+    display: none;
+  }
+}
+
+button:focus {
+  outline: none;
+}

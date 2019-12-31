@@ -1,0 +1,211 @@
+// HERO 
+.hero {
+  height: 90vh;
+  max-height: 425px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  @include lg {
+    max-height: 450px;
+  }
+  @include xl {
+    max-height: 500px;
+  }
+  @include xlhd {
+    max-height: 550px;
+  }
+}
+
+.hero--page {
+  max-height: 400px;
+  @include xl {
+    max-height: 425px;
+  }
+  @include xlhd {
+    max-height: 500px;
+  }
+}
+
+.hero__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 525px;
+  min-width: 330px;
+}
+
+.hero__inner h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: "Lora", Times, serif;
+  margin: 0;
+  @include md {
+    font-size: 3rem;
+  }
+  @include lg {
+    font-size: 3.4rem;
+  }
+  @include xxl {
+    font-size: 3.6rem;
+  }
+}
+
+.fp-intro__text--highlight {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 500;
+  font-family: "Lora", Times, serif;
+  @include lg {
+    font-size: 1.8rem;
+  }
+}
+
+// TWO COLUMN ABOUT SECTION
+.h-block__outer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.h-block {
+  flex: 0 1 50%;
+  width: auto;
+  @include md {
+    height: 350px;
+  }
+  @include lg {
+    height: 460px;
+  }
+}
+
+.h-block p {
+  font-size: 16px;
+}
+
+.h-block__outer:first-of-type {
+  @include mobilemax {
+    margin-bottom: 40px;
+  }
+}
+
+.h-block__inner--padded {
+  padding: 35px 5px;
+  @include md {
+    padding: 30px 45px;
+  }
+  @include xl {
+    padding: 55px 65px;
+  }
+  @include xxl {
+    padding: 65px;
+  }
+}
+
+.h-block__image {
+  background-color: $grey;
+  min-height: 325px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 45px 0;
+  @include lg {
+    border-radius: 0 65px 0;
+  }
+}
+
+// INSTAGRAM SECTION
+.insta-block {
+  padding: 4px 15px;
+  @include md {
+    padding: 4px;
+  }
+}
+
+.instagram-row {
+  max-width: 1100px;
+}
+
+.instagram-section {
+  text-align: center;
+}
+
+.insta-block__inner {
+  height: 350px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+
+.instagram-link {
+  text-align: center;
+  display: inline-block;
+  font-size: 21px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  @include lg {
+    font-size: 24px;
+  }
+}
+
+.insta-block__inner--a {
+  background-image: url("http://warmley.localhost/wp-content/uploads/2019/04/Mokoko-Bristol-137.jpg");
+}
+
+.insta-block__inner--b {
+  background-image: url("http://warmley.localhost/wp-content/uploads/2019/04/Mokoko-Bristol-34.jpg");
+}
+
+.insta-block__inner--c {
+  background-image: url("http://warmley.localhost/wp-content/uploads/2019/04/55698667_2187059601370165_5715912545336819712_n.jpg");
+}
+
+.insta-block__inner--d {
+  background-image: url("http://warmley.localhost/wp-content/uploads/2019/04/996111_578955965513878_1867399946_n.jpg");
+}
+
+.insta-block__inner--e {
+  background-image: url("http://warmley.localhost/wp-content/uploads/2019/04/33132470_1735484729860990_3441049062214729728_n.jpg");
+}
+
+.insta-block__inner--f {
+  background-image: url("http://warmley.localhost/wp-content/uploads/2019/04/Side-Outside.png");
+}
+
+// TOILET SECTION
+.hp-banner {
+  font-family: "Lora", Times, serif;
+  font-style: italic;
+  position: relative;
+  text-align: center;
+  padding: 0 15px;
+  // padding: 60px 20px;
+  // @include lg {
+  //   padding: 20px 200px 100px;
+  // }
+}
+
+.hp-banner__inner {
+  max-width: 850px;
+  z-index: 1;
+}
+
+.hp-banner__text {
+  color: $dark-text;
+  font-size: 1.8em;
+  @include lg {
+    font-size: 2.6em;
+  }
+}
+
+// MAP 
+.map__column {
+  max-height: 400px;
+}

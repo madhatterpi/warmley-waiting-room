@@ -1,0 +1,109 @@
+.footer {
+  background: #f9f9f9;
+  @include md {
+    padding: 65px;
+  }
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .fab {
+  font-size: 28px;
+  margin: 0 10px;
+  color: $dark-text;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 35px 0 0;
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.footer-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include md {
+    flex: 0 1 33.3333%;
+    align-items: initial;
+  }
+}
+
+.footer-block a,
+.footer-block p {
+  font-size: 15px;
+}
+
+.footer-block__content {
+  text-align: center;
+  padding: 35px;
+  @include md {
+    padding: 0;
+  }
+}
+
+.footer-block__title {
+  font-family: "Lora", Times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.footer-block__text p {
+  margin: 0 0 5px;
+}
+
+.footer-breaker {
+  display: flex;
+  align-items: center;
+}
+
+.footer-breaker__inner {
+  width: 1px;
+  height: 48%;
+  background: black;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.95em !important;
+  padding: 18px;
+  background: #f9f9f9;
+  p,
+  a {
+    font-size: 14px !important;
+    margin: 0;
+    color: $dark-text;
+  }
+}
+
+.webdev-link {
+  text-decoration: underline;
+  &:hover {
+    color: $brand;
+  }
+}
+
+.address a {
+  color: $dark-text;
+  transition: 0.15s;
+}
+
+.address a:hover {
+  text-decoration: none;
+}
+
+.footer__icon:hover {
+  color: $brand;
+  transition: 0.15s color;
+}
